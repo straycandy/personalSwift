@@ -8,13 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: MRMenuViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.cSetCustomStyles()
+        self.requestDatas()
     }
 
-
+    private func cSetCustomStyles() {
+        self.naviBar.backgroundImage.image = UIImage.init(named: "SNMKXSMS_Navi_BackgroundImage")
+        self.naviBar.titleImageView.image = UIImage.init(named: "SNMKZSQ_ZSQ_NaviTitle")
+        self.naviBar.backBtn.setImage(UIImage.init(named: "SNMKXSMS_BackBtn"), for: UIControl.State.normal)
+        self.naviBar.rightMoreBtn.setImage(UIImage.init(named: "SNMKXSMS_MoreBtn"), for: UIControl.State.normal)
+    }
+    
+    private func requestDatas() {
+        MRServiceTool.loadMainMenuData { (menuDto) in
+            
+        }
+    }
 }
 
