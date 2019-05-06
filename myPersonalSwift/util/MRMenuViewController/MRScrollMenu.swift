@@ -18,13 +18,14 @@ class MRScrollMenu: UIScrollView {
     /// - Parameter menuDtoArray: MRMenuDto 组成的array
     public func cSetItemsWithMenuDtoArray(_ menuDtoArray : [SNXSQGAcitivesDto] ,menuType: MRMenuType) {
         for view in self.subviews {
+            //移除之前的
             if view.tag == menuItemsTag {
                 view.removeFromSuperview()
             }
         }
-        
+        //遍历生成现在的
         for menuDto in menuDtoArray {
-            let menuItem = MRMenuItem.init(menuDto: menuDto)
+            let menuItem = MRMenuItem.init(menuDto: menuDto, frame: CGRect.init(x: 0, y: 0, width: 40, height: 20))
             menuItem.tag = menuItemsTag;
             self.addSubview(menuItem);
             
