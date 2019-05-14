@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0353BC9AAA2BCEB227ABBA0B /* Pods_myPersonalSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1A01F0FCF380DC7BF8F0CC /* Pods_myPersonalSwift.framework */; };
 		7C0ED6C422685CA6003C3C1A /* SNXSQGAcitivesDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0ED6C322685CA6003C3C1A /* SNXSQGAcitivesDto.swift */; };
+		7C181CD0228179190027405A /* ConstraintArrayDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C181CCF228179190027405A /* ConstraintArrayDSL.swift */; };
+		7C181CD22281ABDC0027405A /* MRMenuDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C181CD12281ABDC0027405A /* MRMenuDto.swift */; };
+		7C3AE6262283B92500513FAD /* MRExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3AE6252283B92500513FAD /* MRExtension.swift */; };
 		7CA46264225E2773001CB754 /* MRServiceTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA46263225E2773001CB754 /* MRServiceTool.swift */; };
 		7CA46266225E329F001CB754 /* MRServiceDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA46265225E329F001CB754 /* MRServiceDomain.swift */; };
 		7CD48949225B7785002A7171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD48948225B7785002A7171 /* AppDelegate.swift */; };
@@ -28,6 +31,9 @@
 		53A90D7493F16B1D05030E82 /* Pods-myPersonalSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myPersonalSwift.release.xcconfig"; path = "Target Support Files/Pods-myPersonalSwift/Pods-myPersonalSwift.release.xcconfig"; sourceTree = "<group>"; };
 		56E0EAD248060649E2E479FE /* Pods-myPersonalSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myPersonalSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-myPersonalSwift/Pods-myPersonalSwift.release.xcconfig"; sourceTree = "<group>"; };
 		7C0ED6C322685CA6003C3C1A /* SNXSQGAcitivesDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNXSQGAcitivesDto.swift; sourceTree = "<group>"; };
+		7C181CCF228179190027405A /* ConstraintArrayDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintArrayDSL.swift; sourceTree = "<group>"; };
+		7C181CD12281ABDC0027405A /* MRMenuDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRMenuDto.swift; sourceTree = "<group>"; };
+		7C3AE6252283B92500513FAD /* MRExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRExtension.swift; sourceTree = "<group>"; };
 		7CA46263225E2773001CB754 /* MRServiceTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRServiceTool.swift; sourceTree = "<group>"; };
 		7CA46265225E329F001CB754 /* MRServiceDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRServiceDomain.swift; sourceTree = "<group>"; };
 		7CD48945225B7785002A7171 /* myPersonalSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myPersonalSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,9 +111,11 @@
 		7CD4895D225B77A2002A7171 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				7C181CCF228179190027405A /* ConstraintArrayDSL.swift */,
 				7CD48964225B77F6002A7171 /* MRMenuViewController */,
 				7CD48966225C31A8002A7171 /* MRNaviBar.swift */,
 				7CD48968225C41C1002A7171 /* Const.swift */,
+				7C3AE6252283B92500513FAD /* MRExtension.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -118,6 +126,7 @@
 				7CD48960225B77A2002A7171 /* MRMenuViewController.swift */,
 				7CD4895E225B77A2002A7171 /* MRScrollMenu.swift */,
 				7CD4896A225D8836002A7171 /* MRMenuItem.swift */,
+				7C181CD12281ABDC0027405A /* MRMenuDto.swift */,
 			);
 			path = MRMenuViewController;
 			sourceTree = "<group>";
@@ -279,9 +288,12 @@
 			files = (
 				7CA46264225E2773001CB754 /* MRServiceTool.swift in Sources */,
 				7C0ED6C422685CA6003C3C1A /* SNXSQGAcitivesDto.swift in Sources */,
+				7C3AE6262283B92500513FAD /* MRExtension.swift in Sources */,
+				7C181CD0228179190027405A /* ConstraintArrayDSL.swift in Sources */,
 				7CD4896B225D8836002A7171 /* MRMenuItem.swift in Sources */,
 				7CA46266225E329F001CB754 /* MRServiceDomain.swift in Sources */,
 				7CD48961225B77A2002A7171 /* MRScrollMenu.swift in Sources */,
+				7C181CD22281ABDC0027405A /* MRMenuDto.swift in Sources */,
 				7CD48963225B77A2002A7171 /* MRMenuViewController.swift in Sources */,
 				7CD4894B225B7785002A7171 /* ViewController.swift in Sources */,
 				7CD48967225C31A8002A7171 /* MRNaviBar.swift in Sources */,

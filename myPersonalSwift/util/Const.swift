@@ -48,6 +48,8 @@ func get375Width(_ transSpace : translateWidth ) -> CGFloat {
     }else if let value = transSpace as? Double {
         floatValue = CGFloat(value)
     }
-    return floatValue / 375.0;
+    let v = CGFloat(floatValue * kScreenWidth / 375.0)
+    
+    return v;
 }
 
