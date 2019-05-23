@@ -43,6 +43,15 @@ class MRScrollMenu: UIScrollView{
         self.menuItemsArray.snp.distributeViewsAlong(axisType: .horizontal, fixedSpacing: 0, leadSpacing: 0, tailSpacing: 0);
     }
     
+    public func mrMenuItemClickOfIndex(clickIndex: NSInteger) {
+        guard clickIndex < self.menuItemsArray.count else {
+            print("数组越界，func：\(#function)")
+            return
+        }
+        let clickItem = self.menuItemsArray[clickIndex]
+        self.mrMenuItemClick(clickedItem: clickItem)
+    }
+    
     /// 点击items
     ///
     /// - Parameter clickedItem: 当前点击的item
@@ -75,15 +84,6 @@ class MRScrollMenu: UIScrollView{
     
     private func finalShouldMoveToItem(moveItem: MRMenuItem) {
         self.setContentOffset(moveItem.frame.origin, animated: true)
-    }
-    
-    public func mrMenuItemClickOfIndex(clickIndex: NSInteger) {
-        guard clickIndex < self.menuItemsArray.count else {
-            print("数组越界，func：\(#function)")
-            return
-        }
-        let clickItem = self.menuItemsArray[clickIndex]
-        self.mrMenuItemClick(clickedItem: clickItem)
     }
 }
 

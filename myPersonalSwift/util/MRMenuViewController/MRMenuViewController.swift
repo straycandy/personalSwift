@@ -21,6 +21,10 @@ public enum MRMenuType {
 //    case MRMenuTypeImageThanLabel
 }
 
+@objc protocol MRScrollViewControllerDelegate {
+    @objc optional func mrScrollMenuDidSelectIndex(index:NSInteger)->(UIViewController)
+}
+
 class MRMenuViewController : UIViewController{
     var _menuType = MRMenuType.MRMenuTypeLabelOnly
     var _menuDtosArray = NSArray();
